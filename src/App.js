@@ -6,8 +6,8 @@ import Header from "./Header";
 import Container from "./Container";
 
 const tasks = [
- { content: "zjeść parówki", done: false },
- { content: "uprać ciuchy", done: true },
+ { content: "zjeść obiad", done: false },
+ { content: "uprasować ciuchy", done: true },
 ];
 
 const hiddenDoneTasks = false;
