@@ -14,7 +14,7 @@
 
 @media (max-width: 820px) {
     .buttons__button {
-        max-width: 100%;
+        flex-basis: 100%;
         margin: 10px;
     }
 }
