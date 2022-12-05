@@ -14,8 +14,3 @@ body {
   word-break: break-word;
   overflow-wrap: break-word;
 }
-
-#root {
-  display: flex;
-  justify-content: center;
-}
