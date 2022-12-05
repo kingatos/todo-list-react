@@ -1,7 +1,6 @@
-import React from "react";
 import "./style.css";
 
-const Buttons = ({tasks, hiddenDoneTasks}) => (
+const Buttons = ({ tasks, hiddenDoneTasks }) => (
   <div className="buttons">
         {tasks.length > 0 && (
           <>
