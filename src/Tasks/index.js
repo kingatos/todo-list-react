@@ -6,8 +6,8 @@ const Tasks = ({ tasks, hiddenDoneTasks }) => (
             <li
                 className={`list__item${task.done && hiddenDoneTasks ? " list__item--hidden" : ""}`}
                 key={task.id}
-              >
-                 <button className="button__list">
+            >
+                <button className="button__list">
                     {task.done ? "✔" : ""}
                 </button>
                 <p className={`list__form${task.done ? " list__itemDone" : ""}`}>
@@ -15,7 +15,7 @@ const Tasks = ({ tasks, hiddenDoneTasks }) => (
                 </p>
                 <button className="button__listRemove">
                 </button>
-              </li>
+            </li>
         ))}
     </ul>
 );
