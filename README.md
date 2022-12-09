@@ -43,11 +43,15 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 - HTML
 - CSS
-- JavaScript ES6+
+- javaScript ES6+
 - BEM Convention
-- Media Queries
+- media queries
 - Open Graph
 - FLEX/GRID
-- Normalise.css
-- React.js
-- Node.js
+- normalise.css
+- react.js
+- node.js
+- create react app
+- webpack
+- babel
+
