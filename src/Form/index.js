@@ -7,22 +7,22 @@ const Form = ({ addNewTask }) => {
 
     const onFormSubmit = (event) => {
         event.preventDefault();
+        if ( newTaskContent === "") {
+            return;
+        } 
         addNewTask(newTaskContent.trim());
         setNewTaskContent("");
-
-        if (inputRef.current.value.trim() === ""); {
-            inputRef.current.focus();
-        } return;
     };
+    
 
     return (
         <form
             className="form"
             onSubmit={onFormSubmit}>
             <input value={newTaskContent}
-                ref={inputRef}
                 className="form__input"
                 placeholder="Co jest do zrobienia?"
+                ref={inputRef}
                 onChange={({ target }) => setNewTaskContent(target.value)}
             />
             <button
