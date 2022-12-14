@@ -1,6 +1,6 @@
 # ✅ Task list with Create React App
 
-## Demo ➡ https://kingatos.github.io/todo-list-react/
+# ➡  [DEMO](https://kingatos.github.io/todo-list-react/)
 
 ## Description 
 
@@ -41,17 +41,17 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ### `technologies used in the project`
 
-- HTML
-- CSS
-- javaScript ES6+
-- BEM Convention
-- media queries
-- Open Graph
-- FLEX/GRID
-- normalise.css
-- react.js
-- node.js
-- create react app
-- webpack
-- babel
+`HTML`
+`CSS`
+`javaScript ES6+`
+`BEM Convention`
+`media queries`
+`Open Graph`
+`FLEX/GRID`
+`normalise.css`
+`react.js`
+`node.js`
+`create react app`
+`webpack`
+`babel`
 
