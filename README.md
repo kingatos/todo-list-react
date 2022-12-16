@@ -2,6 +2,8 @@
 
 # ➡  [DEMO](https://kingatos.github.io/todo-list-react/)
 
+## ![How it use?](https://i.ibb.co/NVZZQWG/listtodo.gif)
+
 ## Description 
 
 Here is a simple to do list. Enter your responsibilities and manage them!
