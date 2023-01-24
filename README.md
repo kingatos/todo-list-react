@@ -2,7 +2,7 @@
 
 # ➡  [DEMO](https://kingatos.github.io/todo-list-react/)
 
-## ![How it use?](https://i.ibb.co/NVZZQWG/listtodo.gif)
+## ![How it use?](https://i.ibb.co/DbXbPyq/todo-list.gif)
 
 ## Description 
 
