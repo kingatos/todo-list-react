@@ -1,12 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { createGlobalStyle } from "styled-components";
 
+const GlobalStyles = createGlobalStyle`
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin:auto;
+  padding: 30px;
+  background-color:#cccccc41;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+html {
+  box-sizing: border-box;
+}
+  
+*, ::after, ::before {
+  box-sizing:inherit;
+}
+`
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <GlobalStyles />
     <App />
   </React.StrictMode>
 );
