@@ -2,26 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { createGlobalStyle } from "styled-components";
+import { GlobalStyles } from "./styled";
 
-const GlobalStyles = createGlobalStyle`
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin:auto;
-  padding: 30px;
-  background-color:#cccccc41;
-  word-break: break-word;
-  overflow-wrap: break-word;
-}
-
-html {
-  box-sizing: border-box;
-}
-  
-*, ::after, ::before {
-  box-sizing:inherit;
-}
-`
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
