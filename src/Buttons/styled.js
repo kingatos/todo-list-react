@@ -30,5 +30,9 @@ export const StyledBothButtons = styled.button`
     ${({  disabled }) => disabled && css`
         color: #ccc;
         cursor: not-allowed;
+
+        &:hover {
+            color: #ccc;
+        }
     `}
 `;
