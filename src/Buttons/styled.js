@@ -5,7 +5,7 @@ export const StyledButtons = styled.div`
     flex-wrap: wrap;
 `;
 
-export const StyledBothButtons = styled.button`
+export const Button = styled.button`
     font-size: 15px;
     color: teal;
     border: none;
