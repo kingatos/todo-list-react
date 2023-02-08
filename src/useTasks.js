@@ -1,7 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+export const getInitialTasks = () => {
+    const tasksFromLocalStorage = localStorage.getItem("tasks");
+  
+    return tasksFromLocalStorage
+      ? JSON.parse(tasksFromLocalStorage)
+      : [];
+  };
+
 
 function useTasks(getInitialTasks = []) {
+
     const [tasks, setTasks] = useState(getInitialTasks);
+
+    useEffect(() => {
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+      }, [tasks]);
 
     const removeTask = (id) => {
         setTasks(tasks => tasks.filter(task => task.id !== id));
@@ -28,6 +42,7 @@ function useTasks(getInitialTasks = []) {
             },
         ]);
     };
+
 
     return { tasks, removeTask, toggleTaskDone, setAllDone, addNewTask };
 }

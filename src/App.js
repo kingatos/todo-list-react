@@ -1,35 +1,28 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
-import Container from "./Container";
-import useTasks from "./useTasks";
+import useTasks, { getInitialTasks } from "./useTasks";
+import styled from "styled-components";
 
-
-const getInitialTasks = () => {
-  const tasksFromLocalStorage = localStorage.getItem("tasks");
-
-  return tasksFromLocalStorage
-    ? JSON.parse(tasksFromLocalStorage)
-    : [];
-};
+export const StyledContainer = styled.main`
+    max-width: 900px;
+    padding: 20px;
+    margin: 0 auto;
+`;
 
 function App() {
   const [hiddenDone, setHiddenDone] = useState(false);
   const { tasks, removeTask, toggleTaskDone, setAllDone, addNewTask } = useTasks(getInitialTasks);
-
-  useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
 
   const toggleHiddenDone = () => {
     setHiddenDone(hiddenDone => !hiddenDone);
   };
 
   return (
-    <Container>
+    <StyledContainer>
       <Header
         title="Lista zadań"
       />
@@ -62,7 +55,7 @@ function App() {
           />
         }
       />
-    </Container>
+    </StyledContainer>
   );
 }
 
