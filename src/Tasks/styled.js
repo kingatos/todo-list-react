@@ -41,31 +41,25 @@ export const Button = styled.button`
     color:white;
     background:rgb(13, 97, 33);
     transition: 0.5s;
+`;
 
-    ${({ toggleDone }) => toggleDone && css`
+export const ToggleDoneButton = styled(Button)`
         background: hsl(120, 61%, 34%);
         
         &:hover {
             background-color: hsl(120, 61%, 39%);
         }
-
         &:active {
             background-color: hsl(120, 61%, 50%);
         }
-    `}
+`;
 
-    ${({ remove }) => remove && css`
-        padding: 5px;
-        width: 30px;
-        height: 30px;
-        background-color: rgb(212, 11, 11);
-        background-image: url("${removeIcon}");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 17px;
-        cursor: pointer;
-        border: none;
-        transition: 0.5s;
+export const RemoveButton = styled(Button)`
+         background-color: rgb(212, 11, 11);
+         background-image: url("${removeIcon}");
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: 17px;
 
         &:hover {
             background-color: hsl(348, 83%, 52%);
@@ -74,5 +68,4 @@ export const Button = styled.button`
         &:active {
             background-color: hsl(348, 83%, 52%);
         }
-    `}
-`
+`;
