@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const StyledSection = styled.section`
+export const Wrapper = styled.section`
     margin: 10px 0;
-    background: white;
-    box-shadow: 0 0 5px #ddd;
+    background: ${({ theme }) => theme.color.white};
+    box-shadow: 0 0 5px ${({ theme }) => theme.color.alto};
 `;
 
 export const StyledHeader = styled.h1`
@@ -13,9 +13,9 @@ export const StyledHeader = styled.h1`
     font-size: 20px;
     padding: 20px;
     margin: 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid ${({ theme }) => theme.color.alto};
 
-   @media(max-width: 820px) {
+   @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
         grid-gap: 20px;
    }

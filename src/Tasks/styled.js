@@ -10,7 +10,7 @@ export const List = styled.ul`
 export const Item = styled.li`
     text-decoration: none;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid ${({ theme }) => theme.color.alto};
     display: flex;
 
     ${({ hidden }) => hidden && css`
@@ -38,34 +38,34 @@ export const Button = styled.button`
     width: 30px;
     height: 30px;
     cursor: pointer;
-    color:white;
+    color: ${({ theme }) => theme.color.white};
     background:rgb(13, 97, 33);
     transition: 0.5s;
 `;
 
 export const ToggleDoneButton = styled(Button)`
-        background: hsl(120, 61%, 34%);
+        background: ${({ theme }) => theme.color.forestGreen};
         
         &:hover {
-            background-color: hsl(120, 61%, 39%);
+            filter: brightness(110%);
         }
         &:active {
-            background-color: hsl(120, 61%, 50%);
+            filter: brightness(120%);
         }
 `;
 
 export const RemoveButton = styled(Button)`
-         background-color: rgb(212, 11, 11);
+         background-color: ${({ theme }) => theme.color.crimson};
          background-image: url("${removeIcon}");
          background-repeat: no-repeat;
          background-position: center;
          background-size: 17px;
 
         &:hover {
-            background-color: hsl(348, 83%, 52%);
+            filter: brightness(110%);
         }
 
         &:active {
-            background-color: hsl(348, 83%, 52%);
+            filter: brightness(120%);
         }
 `;

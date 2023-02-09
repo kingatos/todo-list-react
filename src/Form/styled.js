@@ -5,16 +5,16 @@ export const StyledForm = styled.form`
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
 
-    @media(max-width: 820px) {
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
     }
 `;
 
 export const StyledInput = styled.input`
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid ${({ theme }) => theme.color.alto};
     
-    @media(max-width: 320px) {
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileWidth}px) {
         width: 100%;
     }
 `;
@@ -22,17 +22,17 @@ export const StyledInput = styled.input`
 export const StyledButton = styled.button`
     padding: 10px;
     border-style: none;
-    color:white;
+    color:${({ theme }) => theme.color.white};
     cursor: pointer;
     transition: 0.5s;
-    background:hsl(180, 100%, 25%);
+    background:${({ theme }) => theme.color.teal};
 
     &:hover {
-        background: hsl(180, 100%, 30%);
+        filter: brightness(110%);
         transform: scale(1.05);
     }
 
     &:active {
-        background-color:hsl(180, 100%, 35%);
+        filter: brightness(120%);
     }
 `;

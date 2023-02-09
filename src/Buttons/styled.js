@@ -1,38 +1,34 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
-export const StyledButtons = styled.div`
+export const Wrapper = styled.div`
     display:flex;
     flex-wrap: wrap;
 `;
 
 export const Button = styled.button`
     font-size: 15px;
-    color: teal;
+    color: ${({ theme }) => theme.color.teal};
     border: none;
     background-color: transparent;
     transition: color 0.5s;
     margin: 0 0 0 20px;
     cursor: pointer;
 
-    @media(max-width: 820px) {
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         flex-basis: 100%;
         margin: 10px;
     }
 
     &:hover {
-        color: hsl(191, 54%, 45%);
+        filter: brightness(110%);
     }
 
     &:active {
-        color: hsl(180, 100%, 35%);
+        filter: brightness(120%);
     }
 
-    ${({  disabled }) => disabled && css`
-        color: #ccc;
+    &:disabled {
+        color: ${({ theme }) => theme.color.silver};
         cursor: not-allowed;
-
-        &:hover {
-            color: #ccc;
-        }
-    `}
+    }
 `;
