@@ -4,7 +4,7 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
-import useTasks, { getInitialTasks } from "./useTasks";
+import useTasks from "./useTasks";
 import styled from "styled-components";
 
 export const StyledContainer = styled.main`
@@ -15,11 +15,19 @@ export const StyledContainer = styled.main`
 
 function App() {
   const [hiddenDone, setHiddenDone] = useState(false);
-  const { tasks, removeTask, toggleTaskDone, setAllDone, addNewTask } = useTasks(getInitialTasks);
 
   const toggleHiddenDone = () => {
     setHiddenDone(hiddenDone => !hiddenDone);
   };
+
+  const {
+    tasks,
+    removeTask,
+    toggleTaskDone,
+    setAllDone,
+    addNewTask
+  } = useTasks();
+
 
   return (
     <StyledContainer>
