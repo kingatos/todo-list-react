@@ -20,6 +20,7 @@ const Form = ({ addNewTask }) => {
 
         addNewTask(trimmedNewTaskContent);
         setNewTaskContent("");
+        inputRef.current.focus();
     };
 
 
