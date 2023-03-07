@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import removeIcon from "../Tasks/wastebasket.png";
+import removeIcon from "../TasksList/wastebasket.png";
 
 export const List = styled.ul`
     list-style: none;
