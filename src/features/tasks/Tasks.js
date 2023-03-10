@@ -6,21 +6,16 @@ import Header from "../../common/Header";
 import styled from "styled-components";
 
 export const StyledContainer = styled.main`
-    max-width: 900px;
-    padding: 20px;
-    margin: 0 auto;
+  max-width: 900px;
+  padding: 20px;
+  margin: 0 auto;
 `;
 
 function Tasks() {
   return (
     <StyledContainer>
-      <Header
-        title="Lista zadań"
-      />
-      <Section
-        title="Dodaj nowe zadanie"
-        body={<Form />}
-      />
+      <Header title="Lista zadań" />
+      <Section title="Dodaj nowe zadanie" body={<Form />} />
       <Section
         title="Lista zadań"
         body={<TasksList />}
