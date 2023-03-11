@@ -7,7 +7,6 @@ import { nanoid } from "@reduxjs/toolkit";
 const Form = () => {
   const [newTaskContent, setNewTaskContent] = useState("");
   const inputRef = useRef(null);
-
   const dispatch = useDispatch();
 
   const focusInput = () => {
