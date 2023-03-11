@@ -6,19 +6,20 @@ import { addTask, setTasks } from "../tasksSlice.js";
 const useTasks = () => {
   const [taskState, setTaskState] = useState([]);
 
-  const dispatch = useDispatch();
-
   useEffect(() => {
     const tasksFromLocalStorage = localStorage.getItem("tasks");
     if (tasksFromLocalStorage) {
-      const tasks = JSON.parse(tasksFromLocalStorage);
-      dispatch(setTasks(tasks));
-      setTaskState(tasks);
+      setTaskState(JSON.parse(tasksFromLocalStorage));
+    } else {
+      setTaskState([]);
     }
-  }, [dispatch]);
+  }, []);
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(taskState));
+    setTaskState(taskState);
   }, [taskState]);
 
   const addNewTask = (newTaskContent) => {
