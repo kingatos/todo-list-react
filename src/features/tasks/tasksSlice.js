@@ -26,6 +26,9 @@ const tasksSlice = createSlice({
         task.done = true;
       });
     },
+    setTasks: (state, { payload }) => {
+      state.tasks = payload;
+    },
   },
 });
 
@@ -35,6 +38,7 @@ export const {
   toggleTaskDone,
   removeTasks,
   setAllDone,
+  setTasks
 } = tasksSlice.actions;
 export const selectTasks = (state) => state.tasks;
 export default tasksSlice.reducer;
