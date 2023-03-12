@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { nanoid } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
-import { setTasks } from "../tasksSlice.js";
 
 const useTasks = () => {
   const [taskState, setTaskState] = useState([]);
@@ -35,7 +34,7 @@ const useTasks = () => {
       id: nanoid(),
     };
 
-    dispatch(setTasks(newTask));
+    dispatch(newTask);
     setTaskState((prevTasks) => [...prevTasks, newTask]);
   };
 
