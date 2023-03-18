@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import removeIcon from "../TasksList/wastebasket.png";
+import { Link } from "react-router-dom";
 
 export const List = styled.ul`
     list-style: none;
@@ -68,4 +69,10 @@ export const RemoveButton = styled(Button)`
         &:active {
             filter: brightness(120%);
         }
+`;
+
+export const StyledLink = styled(Link)`
+  cursor: pointer;
+  color: ${({ theme }) => theme.color.black};
+  text-decoration: none;
 `;
