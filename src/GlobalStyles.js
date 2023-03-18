@@ -17,11 +17,4 @@ export const GlobalStyles = createGlobalStyle`
     word-break: break-word;
     overflow-wrap: break-word;
   }
-
-  a {
-    background-color: transparent;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-  }`
-  ;
+  `;
