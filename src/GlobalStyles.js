@@ -23,11 +23,5 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: black;
     cursor: pointer;
-  }
-
-  ul {
-    justify-content: center;  
-    list-style-type: none;
-    background-color: ${({ theme }) => theme.color.white};
-  } 
-  `;
+  }`
+  ;
