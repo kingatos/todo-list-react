@@ -12,7 +12,7 @@ const AuthorPage = () => (
   <StyledContainer>
     <Header title="O autorze" />
     <Section
-      title="Kinga Toś"
+      title="Kinga Tos"
       body={
         <>
           <p>
