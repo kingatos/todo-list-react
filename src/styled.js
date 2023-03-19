@@ -7,7 +7,7 @@ export const StyledList = styled.ul`
   list-style-type: none;
   background-color: ${({ theme }) => theme.color.teal};
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   margin: 0 auto;
   border-bottom: 1px solid #ddd;
   position: fixed;
@@ -34,4 +34,8 @@ export const ItemA = styled(Link)`
     filter: brightness(120%);
     font-weight:bold;
   }
+
+  &:visited {
+    font-weight:bold;
+}
 `;
