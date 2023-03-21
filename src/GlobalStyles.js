@@ -17,4 +17,8 @@ export const GlobalStyles = createGlobalStyle`
     word-break: break-word;
     overflow-wrap: break-word;
   }
+
+  h1 {
+    margin-top: 80px;
+  }
   `;
