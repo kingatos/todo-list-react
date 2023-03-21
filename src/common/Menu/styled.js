@@ -25,6 +25,7 @@ export const ItemLink = styled(Link)`
   text-decoration: none;
   cursor: pointer;
   color: ${({ theme }) => theme.color.white};
+  font-weight: ${({ open }) => open ? "bold" : "normal"};
 
   &:hover {
     filter: brightness(110%);
@@ -32,10 +33,6 @@ export const ItemLink = styled(Link)`
 
   &:active {
     filter: brightness(120%);
-    font-weight:bold;
   }
 
-  &:visited {
-    font-weight:bold;
-}
 `;
