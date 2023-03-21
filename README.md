@@ -2,7 +2,7 @@
 
 # ➡  [DEMO](https://kingatos.github.io/todo-list-react/)
 
-## ![How it use?](https://i.ibb.co/DbXbPyq/todo-list.gif)
+## ![How it use?](https://i.ibb.co/njhBkG3/todoslist.gif)
 
 ## Description 
 
@@ -60,5 +60,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 `styled-components`
 `react-redux`
 `reduxjs toolkit`
+`redux-saga`
 
 
