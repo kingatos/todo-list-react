@@ -21,8 +21,7 @@ const AuthorPage = () => (
             kryminalistyka i kryminologia oraz służby ochrony bezpieczeństwa
             publicznego. 🎓
             <br />
-            Mimo wykształcenia mam smykałkę do innych rzeczy... Uwielbiam
-            podróże małe i duże. Kocham jeść, aby spalić niezliczone kalorie
+            Mimo wykształcenia mam smykałkę do innych rzeczy... Lubię podróżować. Kocham jeść, aby spalić niezliczone kalorie
             dużo jeżdzę na rowerze, gram w badmintona oraz chodzę na siłownię.🤸‍♀️
           </p>
           <p>
