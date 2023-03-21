@@ -73,6 +73,6 @@ export const RemoveButton = styled(Button)`
 
 export const StyledLink = styled(Link)`
   cursor: pointer;
-  color: ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.color.teal};
   text-decoration: none;
 `;
