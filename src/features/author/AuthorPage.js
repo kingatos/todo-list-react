@@ -29,7 +29,7 @@ const AuthorPage = () => (
             <br />
             Od dłuższego czasu interesuje się programowaniem stron www oraz
             tworzeniem aplikacji.👨‍💻 <br />
-            Chciałabym rozwijać się w tym kierunku.❤️
+            Chciałabym rozwijać się w kierunku Frontendu.❤️
             <br />
             Uważam, że <strong>branża IT</strong> jest przyszłościowa z
             świetnymi zarobkami. 💸
