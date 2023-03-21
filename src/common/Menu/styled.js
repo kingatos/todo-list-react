@@ -7,7 +7,7 @@ export const StyledMenu = styled.ul`
   list-style-type: none;
   background-color: ${({ theme }) => theme.color.teal};
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   margin: 0 auto;
   border-bottom: 1px solid #ddd;
   position: fixed;
