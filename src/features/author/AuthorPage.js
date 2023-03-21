@@ -16,7 +16,7 @@ const AuthorPage = () => (
       body={
         <>
           <p>
-            Na początek, kilka słów o mnie. Mam na imię <strong>Kinga Tos</strong>, mieszkam w Rzeszowie. Z wykształcenia
+            Mam na imię <strong>Kinga Tos</strong>, mieszkam w Rzeszowie. Z wykształcenia
             jestem magistrem bezpieczeństwa-wewnętrznego o specjalizacji
             kryminalistyka i kryminologia oraz służby ochrony bezpieczeństwa
             publicznego. 🎓
