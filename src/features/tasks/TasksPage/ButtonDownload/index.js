@@ -6,15 +6,19 @@ import { StyledButtonDownload } from "./styled";
 const ButtonDownload = () => {
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
 
-  const handleFetchExampleTasks = () => {
+  const handleFetchExampleTasks = async () => {
     setLoading(true);
+    await new Promise(resolve => setTimeout(resolve, 5000));
     dispatch(fetchExampleTasks());
+    setLoading(false);
+    setSuccess(true);
   };
 
   return (
     <StyledButtonDownload onClick={handleFetchExampleTasks} disabled={loading}>
-      {loading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
+      {loading ? "Ładowanie..." : success ? "Pobierz przykładowe zadania" : "Pobierz przykładowe zadania"}
     </StyledButtonDownload>
   );
 };
