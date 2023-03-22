@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const StyledMenu = styled.ul`
   display: flex;
@@ -20,19 +20,17 @@ export const ItemMenu = styled.li`
   margin-left: 20px;
 `;
 
-export const ItemLink = styled(Link)`
+export const StyledNavLink = styled(NavLink)`
   background-color: transparent;
   text-decoration: none;
   cursor: pointer;
   color: ${({ theme }) => theme.color.white};
-  font-weight: ${({ open }) => open ? "bold" : "normal"};
+  
+  &.active {
+  font-weight:bold;
+  }
 
   &:hover {
     filter: brightness(110%);
   }
-
-  &:active {
-    filter: brightness(120%);
-  }
-
 `;

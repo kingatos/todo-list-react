@@ -1,20 +1,17 @@
-import { useLocation } from "react-router-dom"; 
-import { ItemLink, StyledMenu, ItemMenu } from "./styled.js";
+import { StyledMenu, ItemMenu, StyledNavLink } from "./styled.js";
 
 const Menu = () => {
-  const { pathname } = useLocation();
-
   return (
     <StyledMenu>
       <ItemMenu>
-        <ItemLink to="/zadania" open={pathname === "/zadania"}>
+        <StyledNavLink activeClassName="active" to="/zadania">
           zadania
-        </ItemLink>
+        </StyledNavLink>
       </ItemMenu>
       <ItemMenu>
-        <ItemLink to="/autor" open={pathname === "/autor"}>
+        <StyledNavLink activeClassName="active" to="/autor">
           o autorze
-        </ItemLink>
+        </StyledNavLink>
       </ItemMenu>
     </StyledMenu>
   );
