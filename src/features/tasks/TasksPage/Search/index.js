@@ -1,4 +1,4 @@
-import Input from "../../Input";
+import Input from "../../Input/styled";
 import { Wrapper } from "../Search/styled";
 import searchQueryParamName from "../searchQueryParamName";
 import { useQueryParameter, useReplaceQueryParameter } from "../.././TasksPage/queryParameters";
