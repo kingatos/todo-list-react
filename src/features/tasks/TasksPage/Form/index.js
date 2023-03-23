@@ -3,7 +3,7 @@ import { StyledForm, StyledButton } from "./styled.js";
 import { useDispatch } from "react-redux";
 import { addTask } from "../.././tasksSlice";
 import { nanoid } from "@reduxjs/toolkit";
-import Input from "../../Input";
+import Input from "../../Input/styled";
 
 
 const Form = () => {
