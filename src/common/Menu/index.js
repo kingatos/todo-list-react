@@ -4,12 +4,12 @@ const Menu = () => {
   return (
     <StyledMenu>
       <ItemMenu>
-        <StyledNavLink activeClassName="active" to="/zadania">
+        <StyledNavLink to="/zadania">
           zadania
         </StyledNavLink>
       </ItemMenu>
       <ItemMenu>
-        <StyledNavLink activeClassName="active" to="/autor">
+        <StyledNavLink to="/autor">
           o autorze
         </StyledNavLink>
       </ItemMenu>
