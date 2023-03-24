@@ -11,7 +11,7 @@ export const useQueryParameter = (name) => {
     const searchParams = new URLSearchParams(location.search);
   
     return ({ key, value }) => {
-      if (value.trim() !== "") {
+      if (value !== undefined && value.trim() !== "") {
         searchParams.set(key, value);
       } else {
         searchParams.delete(key);
