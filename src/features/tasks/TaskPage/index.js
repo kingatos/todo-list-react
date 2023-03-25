@@ -15,27 +15,16 @@ function TaskPage() {
   const { id } = useParams();
   const task = useSelector((state) => getTasksById(state, id));
   
-  if (!task) {
-    return (
-      <StyledContainer>
-        <Header title="Szczegóły zadania" />
-        <Section
-          title="Nie znaleziono zadania 😟"
-        />
-      </StyledContainer>
-    );
-  }
-  
   return (
     <StyledContainer>
       <Header title="Szczegóły zadania" />
       <Section
-        title={task.content}
-        body={
+        title={task ? task.content : "Nie znaleziono zadania 😟"}
+        body={task && (
           <>
             <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
           </>
-        }
+        )}
       />
     </StyledContainer>
   );
