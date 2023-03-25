@@ -1,15 +1,9 @@
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
-import styled from "styled-components";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { getTasksById } from "../tasksSlice";
-
-export const StyledContainer = styled.main`
-  max-width: 900px;
-  padding: 20px;
-  margin: 0 auto;
-`;
+import { StyledContainer } from "../../../common/Container/styled";
 
 function TaskPage() {
   const { id } = useParams();

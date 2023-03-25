@@ -1,12 +1,6 @@
-import styled from "styled-components";
+import { StyledContainer } from "../../common/Container/styled";
 import Header from "../../common/Header";
 import Section from "../../common/Section";
-
-export const StyledContainer = styled.main`
-  max-width: 900px;
-  padding: 20px;
-  margin: 0 auto;
-`;
 
 const AuthorPage = () => (
   <StyledContainer>

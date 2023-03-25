@@ -3,15 +3,9 @@ import TasksList from "./TasksList";
 import Buttons from "./Buttons";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
-import styled from "styled-components";
+import { StyledContainer } from "../../../common/Container/styled";
 import Search from "../../../features/tasks/TasksPage/Search";
 import ButtonDownload from "./ButtonDownload";
-
-export const StyledContainer = styled.main`
-  max-width: 900px;
-  padding: 20px;
-  margin: 0 auto;
-`;
 
 function TasksPage() {
   return (
