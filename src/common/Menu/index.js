@@ -5,12 +5,12 @@ const Menu = () => {
     <StyledMenu>
       <ItemMenu>
         <StyledNavLink to="/zadania">
-          zadania
+          Zadania
         </StyledNavLink>
       </ItemMenu>
       <ItemMenu>
         <StyledNavLink to="/autor">
-          o autorze
+          O autorze
         </StyledNavLink>
       </ItemMenu>
     </StyledMenu>
