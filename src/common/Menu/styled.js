@@ -32,6 +32,6 @@ export const StyledNavLink = styled(NavLink)`
   }
 
   &:hover {
-    filter: brightness(110%);
+    color: ${({ theme }) => theme.color.black};
   }
 `;
