@@ -26,9 +26,9 @@ export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   cursor: pointer;
   color: ${({ theme }) => theme.color.white};
-  
+
   &.active {
-  font-weight:bold;
+    font-weight: bold;
   }
 
   &:hover {

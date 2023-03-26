@@ -4,18 +4,13 @@ const Menu = () => {
   return (
     <StyledMenu>
       <ItemMenu>
-        <StyledNavLink to="/zadania">
-          Zadania
-        </StyledNavLink>
+        <StyledNavLink to="/zadania">Zadania</StyledNavLink>
       </ItemMenu>
       <ItemMenu>
-        <StyledNavLink to="/autor">
-          O autorze
-        </StyledNavLink>
+        <StyledNavLink to="/autor">O autorze</StyledNavLink>
       </ItemMenu>
     </StyledMenu>
   );
 };
 
-
-export default Menu;   
+export default Menu;

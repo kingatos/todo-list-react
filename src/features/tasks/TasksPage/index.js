@@ -11,7 +11,11 @@ function TasksPage() {
   return (
     <StyledContainer>
       <Header title="Lista zadań" />
-      <Section title="Dodaj nowe zadanie" extraHeaderContent={<ButtonDownload />} body={<Form />} />
+      <Section
+        title="Dodaj nowe zadanie"
+        extraHeaderContent={<ButtonDownload />}
+        body={<Form />}
+      />
 
       <Section title="Wyszukiwarka" body={<Search />} />
 

@@ -10,13 +10,14 @@ const AuthorPage = () => (
       body={
         <>
           <p>
-            Mam na imię <strong>Kinga Tos</strong>, mieszkam w Rzeszowie. Z wykształcenia
-            jestem magistrem bezpieczeństwa-wewnętrznego o specjalizacji
-            kryminalistyka i kryminologia oraz służby ochrony bezpieczeństwa
-            publicznego. 🎓
+            Mam na imię <strong>Kinga Tos</strong>, mieszkam w Rzeszowie. Z
+            wykształcenia jestem magistrem bezpieczeństwa-wewnętrznego o
+            specjalizacji kryminalistyka i kryminologia oraz służby ochrony
+            bezpieczeństwa publicznego. 🎓
             <br />
-            Mimo wykształcenia mam smykałkę do innych rzeczy... Lubię podróżować. Kocham jeść, aby spalić niezliczone kalorie
-            dużo jeżdzę na rowerze, gram w badmintona oraz chodzę na siłownię.🤸‍♀️
+            Mimo wykształcenia mam smykałkę do innych rzeczy... Lubię
+            podróżować. Kocham jeść, aby spalić niezliczone kalorie dużo jeżdzę
+            na rowerze, gram w badmintona oraz chodzę na siłownię.🤸‍♀️
           </p>
           <p>
             Jestem fanką motoryzacji, lubię szybką jazdę.

@@ -6,7 +6,12 @@ import {
   select,
   delay,
 } from "redux-saga/effects";
-import { fetchExampleTasks, fetchExampleTasksError, fetchExampleTasksSuccess, selectTasks } from "./tasksSlice";
+import {
+  fetchExampleTasks,
+  fetchExampleTasksError,
+  fetchExampleTasksSuccess,
+  selectTasks,
+} from "./tasksSlice";
 import { getExampleTasks } from "./getExampleTasks";
 import { saveTasksInLocalStorage } from "./tasksLocalStorage";
 
@@ -18,7 +23,7 @@ function* fetchExampleTasksHandler() {
   } catch (error) {
     yield put(fetchExampleTasksError());
     yield call(alert, "coś poszło nie tak!");
-  } 
+  }
 }
 function* saveTasksInLocalStorageHandler() {
   const tasks = yield select(selectTasks);

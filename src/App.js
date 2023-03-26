@@ -9,7 +9,7 @@ const App = () => (
     <nav>
       <Menu />
       <Switch>
-      <Route path="/zadania/:id">
+        <Route path="/zadania/:id">
           <TaskPage />
         </Route>
         <Route path="/zadania">

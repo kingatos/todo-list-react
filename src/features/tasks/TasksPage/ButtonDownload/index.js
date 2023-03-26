@@ -7,9 +7,11 @@ const ButtonDownload = () => {
   const loading = useSelector(selectLoading);
 
   return (
-    <StyledButtonDownload disabled={loading} onClick={() => dispatch(fetchExampleTasks())} >
-      {loading ? "Ładowanie..."
-        : "Pobierz przykładowe zadania"}
+    <StyledButtonDownload
+      disabled={loading}
+      onClick={() => dispatch(fetchExampleTasks())}
+    >
+      {loading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
     </StyledButtonDownload>
   );
 };

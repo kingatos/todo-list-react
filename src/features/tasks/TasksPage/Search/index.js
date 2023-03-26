@@ -1,7 +1,10 @@
 import Input from "../../Input/styled";
 import { Wrapper } from "../Search/styled";
 import searchQueryParamName from "../searchQueryParamName";
-import { useQueryParameter, useReplaceQueryParameter } from "../.././TasksPage/queryParameters";
+import {
+  useQueryParameter,
+  useReplaceQueryParameter,
+} from "../.././TasksPage/queryParameters";
 
 const Search = () => {
   const query = useQueryParameter(searchQueryParamName);
@@ -11,17 +14,17 @@ const Search = () => {
     replaceQueryParameter({
       key: searchQueryParamName,
       value: target.value.trim() !== "" ? target.value : undefined,
-    }) 
+    });
   };
- 
+
   return (
     <Wrapper>
       <Input
         placeholder="Filtruj zadania"
         value={query || ""}
         onChange={onInputChange}
-        />
-     </Wrapper>
+      />
+    </Wrapper>
   );
 };
 

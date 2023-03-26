@@ -8,21 +8,22 @@ import { StyledContainer } from "../../../common/Container/styled";
 function TaskPage() {
   const { id } = useParams();
   const task = useSelector((state) => getTasksById(state, id));
-  
+
   return (
     <StyledContainer>
       <Header title="Szczegóły zadania" />
       <Section
         title={task ? task.content : "Nie znaleziono zadania 😟"}
-        body={task && (
-          <>
-            <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
-          </>
-        )}
+        body={
+          task && (
+            <>
+              <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
+            </>
+          )
+        }
       />
     </StyledContainer>
   );
 }
-
 
 export default TaskPage;
