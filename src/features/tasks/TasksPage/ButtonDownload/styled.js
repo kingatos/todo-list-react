@@ -5,7 +5,7 @@ export const StyledButtonDownload = styled.button`
   color: ${({ theme }) => theme.color.teal};
   border: none;
   background-color: transparent;
-  transition: color 0.5s;
+  transition: filter 0.5s;
   margin: 0 0 0 20px;
   cursor: pointer;
 
