@@ -11,7 +11,7 @@ const ButtonDownload = () => {
       disabled={loading}
       onClick={() => dispatch(fetchExampleTasks())}
     >
-      {loading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
+      {loading ? "Trwa pobieranie" : "Pobierz przykładowe zadania"}
     </StyledButtonDownload>
   );
 };
